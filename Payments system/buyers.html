@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buyer Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Blockchain Payment System - Buyer Page</h1>
+  </header>
+  <main>
+    <section id="buyer-form">
+      <h2>Enter Payment Details</h2>
+      <form id="payment-form">
+        <label for="amount">Amount:</label>
+        <input type="text" id="amount" name="amount" required>
+        <!-- Add more form fields as needed (buyer details, etc.) -->
+        <button type="submit">Initiate Payment</button>
+      </form>
+    </section>
+    <section id="verification-status">
+      <h2>Verification Status</h2>
+      <p>Status: <span id="status">Pending</span></p>
+      <button id="verify-button" disabled>Verify</button>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
